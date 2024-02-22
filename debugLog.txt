@@ -1,0 +1,1 @@
+2024-02-21 13:54:46.480 DEBUG DebugNotifications - test_function: This is a debug log
