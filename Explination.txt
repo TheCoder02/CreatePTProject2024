@@ -1,0 +1,4 @@
+This file will explain what every other file in this repository does.
+
+1. DebugNotifications.py imports logging, http.client, and 2 libraies i made.
+the libraries i made 
