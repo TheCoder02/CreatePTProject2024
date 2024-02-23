@@ -1,16 +1,14 @@
 from tkinter import *
 from time import *
+from NotificationMaker import *
 import webbrowser
-def popup_maker():
-   popup = Tk()
-
+def popup_maker(title, link, text):
+   pop = Tk()
+   pop.title(title)
    def onClick():
-       webbrowser.open("file:///C:/Users/lg255111/OneDrive%20-%20Lamar%20Consolidated%20ISD/2023-2024/Computer%20Science/CreatePT%20Ideas/info.html")
+       webbrowser.open(link)
 
-   button = Button(popup,text="You have a virus, click here to run diagnostics!",width = 50,height = 10,bg = 'white',fg = 'black',command=onClick)
+   button = Button(pop,text=text,width = 50,height = 10,bg = 'white',fg = 'black',command=onClick)
    button.pack()
-   popup.mainloop()
-   
-   
-#sleep(5)
-#popup.destroy()
+   pop.mainloop()
+   return pop
